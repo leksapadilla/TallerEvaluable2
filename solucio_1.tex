@@ -1,0 +1,32 @@
+\documentclass{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx} % Required for inserting images
+
+\title{Complexos}
+
+\begin{document}
+
+\maketitle
+
+Volem demostrar que $z_1^n+z_2^n\in \mathbb{R}$ el qual vol dir que $Im(z_1^n)+Im(z_2^n)=0$
+
+Això es pot donar en dos casos: $Im(z_1^n)=Im(z_2^n)=0$  o  $Im(z_1^n)=-Im(z_2^n)$
+
+Com son arrels de la equació, $z^2+az+b=0$ llavors $z=\frac{-a\pm \sqrt{a^2-4b}}{2}$
+
+$z_1=\frac{-a+\sqrt{a^2-4b}}{2}$,$z_2=\frac{-a-\sqrt{a^2-4b}}{2}$
+Si $z_1=0$, $b=0$ llavors $z_2=-a$ que no te part imaginaria i per tant $z_2^n$ tampoc i l'invers també es cert
+
+LLavors, si $z\ne0$, $z^n=e^{nln(z)}$
+
+$ln(z)=ln|z_1|+arg(z)$
+
+$e^{wln(z)}=cos(w*ln|z|)+isin(arg(z))$
+
+Ens intersesa que $sin(arg(z_1))=sin(arg(z_2))$
+$arg(z_1)=Arctan(\frac{\sqrt{4b-a^2}}{-a})$, $arg(z_2)=Arctan(\frac{-\sqrt{4b-a^2}}{-a})$
+
+Com $Arctan(-x)=-Arctan(x)$, $sen(arg(z_1))=sen(-arg(z_2))$ i com $sen(-x)=-sen(x)$, $sen(arg(z_1))=-sen(arg(z_2))$ que es el que voliem.
+\end{document}
